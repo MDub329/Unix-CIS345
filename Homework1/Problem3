@@ -1,7 +1,7 @@
 #Homework1 Problem 3
 #Matthew Wells
 
-solpath=/root/UnixHomework/Homework1
+solpath=/root/UnixHomework/Homework1/Solutions
 writepath=/tmp
 
 cut -f9 Data > $writepath/birthdays

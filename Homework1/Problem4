@@ -1,7 +1,7 @@
 #Homework1 Problem 4
 #Matthew Wells
 
-writepath=/root/UnixHomework/Homework1
+writepath=/root/UnixHomework/Homework1/Solutions
 
 cp Data  $writepath/hw1solution4
 

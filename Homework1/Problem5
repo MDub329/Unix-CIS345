@@ -2,7 +2,7 @@
 #Matthew Wells
 
 writepath=/root/UnixHomework/Homework1/tmp
-solPath=/root/UnixHomework/Homework1
+solPath=/root/UnixHomework/Homework1/Solutions
 
 
 cut -f2 Data > $writepath/lastnames

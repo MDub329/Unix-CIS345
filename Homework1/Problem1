@@ -13,8 +13,8 @@ cut -f5 Data > $writepath/tmp6
 cut -f3 Data > $writepath/tmp7
 cut -f7 Data > $writepath/tmp8
 
-paste -d "," $writepath/tmp1 $writepath/tmp2 $writepath/tmp3 $writepath/tmp4 $writepath/tmp5 $writepath/tmp6 $writepath/tmp7 $writepath/tmp8 > /root/UnixHomework/Homework1/hw1solution1.csv
+paste -d "," $writepath/tmp1 $writepath/tmp2 $writepath/tmp3 $writepath/tmp4 $writepath/tmp5 $writepath/tmp6 $writepath/tmp7 $writepath/tmp8 > /root/UnixHomework/Homework1/Solutions/hw1solution1.csv
 
-cat /root/UnixHomework/Homework1/hw1solution1.csv
+cat /root/UnixHomework/Homework1/Solutions/hw1solution1.csv
 
 rm $writepath/tmp*
