@@ -1,0 +1,10 @@
+#Homework1 Problem 2
+#Matthew Wells
+
+writepath=/root/UnixHomework/Homework1
+
+sed -e 's/[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]/XXX-XX-XXXX/g' Data > $writepath/hw1solution2
+
+cat $writepath/hw1solution2
+
+

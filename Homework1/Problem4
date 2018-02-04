@@ -1,0 +1,21 @@
+#Homework1 Problem 4
+#Matthew Wells
+
+writepath=/root/UnixHomework/Homework1
+
+cp Data  $writepath/hw1solution4
+
+while ((i++)); read p; do
+	year=`cut -d'-' -f6 <<< $p`
+	currentYear=`date +"%Y"`
+	difference=`expr $currentYear - $year`
+	if (( difference < 18 ))
+	then
+		sed -i "${i}d" $writepath/hw1solution4
+	elif (( difference > 49 ))
+	then
+		sed -i "${i}d" $writepath/hw1solution4
+	fi
+done <Data
+
+cat $writepath/hw1solution4

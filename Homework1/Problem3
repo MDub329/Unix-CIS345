@@ -1,0 +1,24 @@
+#Homework1 Problem 3
+#Matthew Wells
+
+solpath=/root/UnixHomework/Homework1
+writepath=/tmp
+
+cut -f9 Data > $writepath/birthdays
+cut -f1-8 Data > $writepath/datawithoutbirthdays
+
+touch $writepath/reformattedbirthdays
+while read p; do
+	month=`cut -d'-' -f1 <<< $p`
+	day=`cut -d'-' -f2 <<< $p`
+	year=`cut -d'-' -f3 <<< $p`
+	date --date="$year-$month-$day 00:00:00" "+%B %e, %Y" >> $writepath/reformattedbirthdays
+done <$writepath/birthdays
+
+paste $writepath/datawithoutbirthdays $writepath/reformattedbirthdays > $solpath/hw1solution3
+cat $solpath/hw1solution3
+
+rm $writepath/birthdays; rm $writepath/datawithoutbirthdays; rm $writepath/reformattedbirthdays
+
+
+
