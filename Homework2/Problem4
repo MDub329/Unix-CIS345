@@ -1,0 +1,56 @@
+#Homework2 Problem 4
+#Matthew Wells
+
+writepath=/tmp/hw2prb2
+
+if [ ! -e "$writepath/Data" ]
+then
+	echo "Phone book does not exist!"
+else
+	if [ $# -eq 0 ]
+	then
+	echo "Enter the search parameters:"
+	read searchVar
+	else
+	searchVar="$1"
+	fi
+	
+	if grep -w $searchVar $writepath/Data > $writepath/result
+	then 
+	cut -f1 $writepath/result > $writepath/tmp1
+	cut -f2 $writepath/result > $writepath/tmp2 
+	cut -f7 $writepath/result > $writepath/tmp3
+	cut -f3 $writepath/result > $writepath/tmp4
+	paste -d',' $writepath/tmp1 $writepath/tmp2 $writepath/tmp3 $writepath/tmp4
+	rm $writepath/tmp*
+	rm $writepath/result
+	else
+	echo "$searchVar is not in the PhoneBook" 
+	fi
+fi
+
+root@kali:/media/root/My Passport/Unix Homework/Unix-CIS345/Homework2# ./Problem4 matt
+matt is not in the PhoneBook
+root@kali:/media/root/My Passport/Unix Homework/Unix-CIS345/Homework2# ./Problem4 Webb
+John,Webb,(417)456-4455,1342 North 32nd ST
+David,Webb,(417)555-1478,Box 34 Rural Route 2
+root@kali:/media/root/My Passport/Unix Homework/Unix-CIS345/Homework2# ./Problem4 John
+John,Webb,(417)456-4455,1342 North 32nd ST
+root@kali:/media/root/My Passport/Unix Homework/Unix-CIS345/Homework2# ./Problem4 Mo
+John,Webb,(417)456-4455,1342 North 32nd ST
+Martin,Jones,(512)432-3433,1456 W Kingsdale
+David,Webb,(417)555-1478,Box 34 Rural Route 2
+root@kali:/media/root/My Passport/Unix Homework/Unix-CIS345/Homework2# ./Problem4 
+Enter the search parameters:
+(212)743-3527
+(212)743-3527 is not in the PhoneBook
+root@kali:/media/root/My Passport/Unix Homework/Unix-CIS345/Homework2# ./Problem4 
+Enter the search parameters:
+(212743-3527
+(212743-3527 is not in the PhoneBook
+root@kali:/media/root/My Passport/Unix Homework/Unix-CIS345/Homework2# ./Problem4 
+Enter the search parameters:
+(212)743-3537
+Edward,Nygma,12458,443 W. Broadway
+root@kali:/media/root/My Passport/Unix Homework/Unix-CIS345/Homework2# 
+
