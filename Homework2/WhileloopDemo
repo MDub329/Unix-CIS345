@@ -1,0 +1,21 @@
+# Demo While loop
+
+
+count=0
+total=0
+
+while test "$value" != finished
+do
+	echo "enter a value or "finished" when you are done"
+	read value
+
+	if [ $value != "finished" ]
+	then
+		(( total += $value ))
+		count=`expr $count + 1`
+	fi
+done
+
+average=$(( $total / $count  ))
+echo "The average is $average"
+

@@ -1,0 +1,61 @@
+Welcome to the interactive user creator!
+
+Please enter the username that you would like to create:
+Matt
+
+Enter the group/s ID for Matt (Format: users,trusted,squid or users) (Default is users):
+users
+
+Enter the path for Matt's home (Default is /home):
+
+
+Enter the path for Matt's shell (Default is /bin/bash):
+
+
+User created!
+Changing the user information for Matt
+Enter the new value, or press ENTER for the default
+	Full Name []: Matt Wells
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+Sorry, passwords do not match
+passwd: Authentication token manipulation error
+passwd: password unchanged
+
+
+------------------------------------------------------
+root@kali:/media/root/My Passport/Unix Homework/Unix-CIS345/Homework3# ./Problem1 
+Welcome to the interactive user creator!
+
+Please enter the username that you would like to create:
+Matt
+User already exists!
+
+Please enter the username that you would like to create:
+MDub329
+
+Enter the group/s ID for MDub329 (Format: users,trusted,squid or users) (Default is users):
+users
+
+Enter the path for MDub329's home (Default is /home):
+
+
+Enter the path for MDub329's shell (Default is /bin/bash):
+
+
+User created!
+Changing the user information for MDub329
+Enter the new value, or press ENTER for the default
+	Full Name []: Matt Wells
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
