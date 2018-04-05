@@ -14,7 +14,7 @@ echo "files are diffrent"
 echo "Make New bin file old bin file?(Y for Yes)"
 read var
 
-if (( $var == Y ))
+if (( $var == "Y" ))
 then
 	cp ./tmp1 ./tmp2
 fi

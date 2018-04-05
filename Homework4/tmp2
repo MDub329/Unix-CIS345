@@ -1,4 +1,4 @@
-total 10730
+total 10734
 -rwxr-xr-x 1 root root 1099016 May 15  2017 bash
 -rwxr-xr-x 3 root root   35448 Jan 29  2017 bunzip2
 -rwxr-xr-x 1 root root  654048 Sep 17  2017 busybox
@@ -93,6 +93,7 @@ lrwxrwxrwx 1 root root      24 Nov  9 13:38 netcat -> /etc/alternatives/netcat
 -rw-r--r-- 1 root root       5 Apr  5 20:48 new1
 -rw-r--r-- 1 root root      13 Apr  5 20:47 new123
 lrwxrwxrwx 1 root root       8 Jul  3  2016 nisdomainname -> hostname
+-rw-r--r-- 1 root root       7 Apr  5 21:25 njgh
 -rwsr-xr-x 1 root root  146128 Jun 22  2017 ntfs-3g
 -rwxr-xr-x 1 root root   10312 Jun 22  2017 ntfs-3g.probe
 -rwxr-xr-x 1 root root   26728 Jun 22  2017 ntfscat
