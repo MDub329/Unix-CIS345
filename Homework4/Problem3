@@ -1,0 +1,5 @@
+#Homework4 Problem 3
+#Matthew Wells
+
+w --from | awk 'NR < 3 {next;}; $4 ~ "day" {print $1; }' | sort -u
+

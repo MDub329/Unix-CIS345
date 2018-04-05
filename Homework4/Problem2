@@ -1,0 +1,5 @@
+#Homework4 Problem 2
+#Matthew Wells
+
+du -shc /home/*
+
