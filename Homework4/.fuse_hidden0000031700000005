@@ -1,8 +1,0 @@
-#Homework4 Problem 1
-#Matthew Wells
-#
-
-ls /bin > ./tmp1
-
-old=md5sum ./tmp1
-
